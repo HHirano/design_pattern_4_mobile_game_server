@@ -1,0 +1,4 @@
+.bookignore
+
+package.json
+docker-compose.yml
