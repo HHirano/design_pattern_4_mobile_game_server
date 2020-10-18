@@ -7,3 +7,5 @@ services:
     tty: true
     volumes:
       - .:/var/web/app
+    ports:
+      - "4000:4000"
