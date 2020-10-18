@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  app:
+    image: node:10.16.0
+    container_name: 'doc_app'
+    tty: true
+    volumes:
+      - .:/var/web/app
