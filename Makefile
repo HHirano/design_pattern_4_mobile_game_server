@@ -1,0 +1,15 @@
+DOCKER_COMPOSE_COMMAND=docker-compose
+DOCKE_COMMAND=docker
+APP_CONTAINER=app
+
+.PHONY: up
+up:
+	$(DOCKER_COMPOSE_COMMAND) up -d $(APP_CONTAINER)
+
+.PHONY: down
+down:
+	$(DOCKER_COMPOSE_COMMAND) down
+
+.PHONY: bash
+bash:
+	$(DOCKER_COMPOSE_COMMAND) exec $(APP_CONTAINER) bash -l
